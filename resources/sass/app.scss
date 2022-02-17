@@ -6,3 +6,14 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Styles
+@import 'header';
+@import 'footer';
+
+body  {
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+  
+}

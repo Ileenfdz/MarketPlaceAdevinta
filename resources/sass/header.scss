@@ -1,0 +1,39 @@
+header {
+    background-color: white;
+
+    #title {
+        font-size: 36px;
+        color: black;
+    }
+
+    #link {
+        font-size: 24px;
+        color: black;
+    }
+
+    #link:hover {
+        transition-delay:0.1s;
+        color: gray;
+    }
+
+    #bar {
+        align-self: center;
+        height: 40px;
+        border: 1px solid black;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        #title {
+            font-size: 24px;
+        }
+
+        #link {
+            font-size: 18px;
+        }
+
+        #bar {
+            align-self: center;
+            height: 20px;
+        }
+    }
+}
