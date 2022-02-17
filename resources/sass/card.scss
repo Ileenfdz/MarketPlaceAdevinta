@@ -1,0 +1,49 @@
+.card-body{
+    .card-title {
+        font-size: 1.5rem;
+    }
+    .fa-pen-to-square, .fa-trash-can{
+        font-size: 1.5rem;
+    }
+    .fa-pen-to-square:hover{
+        color: rgb(88, 176, 235);
+    }
+    .fa-trash-can:hover{
+        color: rgb(253, 72, 72);
+    }
+    .iconsCard{
+        .row{
+            .icon span {
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+            .iconStyle {
+                color: $orange;
+                font-size: 1rem;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    
+    .depText h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .depText p {
+        font-size: 0.9rem;
+    }
+    .btnBuy {
+        background-color: $green !important;
+        color: $white !important;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 2rem !important;
+    }
+    .btnBuy:hover {
+        background-color: $green70 !important;
+    }
+
+}
+.cardAnim:hover {
+    transform: scale(1.1);   
+}
