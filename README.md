@@ -1,64 +1,83 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1>F5 & Adevinta Hackaton Project</h1>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![A test image](https://c.tenor.com/bxe8Qsx3UusAAAAM/cat.gif)
 
-## About Laravel
+# About The Project 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+In this hackathon we were asked to build our own marketplace on any technology stack. This is our project, we hope you like it!
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Our Project Proposal 🥕
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Our idea was to create a marketplace where users could post ads to buy and sell organic fruits and vegetables, locally.
 
-## Learning Laravel
+### UI Design
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Heres some of the mockup designs made by our amazing front end team! 👏👏👏
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![A test image](https://i.postimg.cc/Zqwn862M/UX.png)
 
-## Laravel Sponsors
+### Built With
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+* [Laravel](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+* [MySQL](https://www.mysql.com/)
 
-### Premium Partners
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Installation
 
-## Contributing
+To get a local copy and start running our project you need to follow these steps.👇
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Carruor/MarketPlaceAdevinta.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Install all the dependencies using composer
+   ```sh
+   composer install
+   ```
+4. Copy the example env file and rename it to .env
 
-## Code of Conduct
+5. Generate a new application key
+      ```sh
+   php artisan key:generate
+   ```
+6. Download, install & run Xampp in https://www.apachefriends.org/es/index.html
+      
+  ⚠️ Make sure you set the correct database connection information before running the migrations ⚠️
+  
+7.Run the database migrations with:
+ ```sh
+   php artisan migrate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+8. Start the development server
+     ```sh
+   php artisan serve
+   ```
 
-## License
+🎉🎉🎉You can now access the server at http://localhost:8000 🎉🎉🎉
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Meet team 9️⃣!!
+
+ - A-Ileen Fernández
+ - Carmen Rubio 
+ - Cristian Montoya 
+ - Gabrielle Hurtado 
+ - Julian Ochoa
+ - Sara Salas 
+ - Ibrahem Altheeb
+ 
+ <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
