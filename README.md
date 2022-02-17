@@ -37,7 +37,7 @@ To get a local copy and start running our project you need to follow these steps
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   npm install && npm run dev
    ```
 3. Install all the dependencies using composer
    ```sh
@@ -74,6 +74,24 @@ To get a local copy and start running our project you need to follow these steps
  - Julian Ochoa
  - Sara Salas 
  - Ibrahem Altheeb
+
+ ## Contact us!
+
+  - A-Ileen Fernández -> https://www.linkedin.com/in/ileen-garc%C3%ADa-sampedro-fern%C3%A1ndez/
+    GitHub -> https://github.com/Ileenfdz
+
+  - Carmen Rubio -> https://www.linkedin.com/in/carmen-rubio/
+ 
+  - Cristian Montoya -> https://www.linkedin.com/in/cristian-montoya-l%C3%B3pez-68b652220/
+
+  - Gabrielle Hurtado 
+ 
+  - Julian Ochoa -> https://www.linkedin.com/in/julian-ochoa-barco-165068127/ 
+    GitHub -> https://github.com/Trueqo
+ 
+  - Sara Salas -> https://www.linkedin.com/in/sara-salas-7325181ab
+
+  - Ibrahem Altheeb
  
  <p align="right">(<a href="#top">back to top</a>)</p>
 
