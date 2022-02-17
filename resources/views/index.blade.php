@@ -8,6 +8,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <x-header></x-header>
+    <x-header/>
 </body>
 </html>
