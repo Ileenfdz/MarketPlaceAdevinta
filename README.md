@@ -8,7 +8,9 @@ In this hackathon we were asked to build our own marketplace on any technology s
 
 ## Our Project Proposal 🥕
 
-Our idea was to create a marketplace where users could post ads to buy and sell organic fruits and vegetables, locally.
+Our idea was to create FruverShop, a marketplace where users could post ads to buy and sell organic fruits and vegetables, locally.
+
+![A test image](https://i.postimg.cc/TwnRXMY8/fruver.png)
 
 ### UI Design
 
@@ -55,15 +57,12 @@ To get a local copy and start running our project you need to follow these steps
  ```sh
    php artisan migrate
    ```
-
-
-
 8. Start the development server
      ```sh
    php artisan serve
    ```
-
 🎉🎉🎉You can now access the server at http://localhost:8000 🎉🎉🎉
+
 
 
 ## Meet team 9️⃣!!
