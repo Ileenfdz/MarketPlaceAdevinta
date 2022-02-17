@@ -11342,6 +11342,25 @@ textarea.form-control-lg {
   transform: scale(1.1);
 }
 
+.cardBgInfo {
+  background-color: #00BE65;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+}
+.cardBgInfo .decIcon {
+  background-color: #ffffff85;
+  border-radius: 2rem 0 0.5rem 0;
+  width: 5rem;
+  height: 5rem;
+}
+.cardBgInfo .decIcon .iconInfo {
+  font-size: 2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;

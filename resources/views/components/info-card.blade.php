@@ -1,5 +1,5 @@
-<div class="my-5 col-12">
-    <h1 class="col-10">Information</h1>
+<div class="my-5 col-10">
+    <h1 class="m-auto mb-4 col-10">Information</h1>
     <div class="contInfo d-flex justify-content-center gap-3 flex-wrap col-12">
         <div class="card cardBgInfo position-relative border-0 p-3 col-10 col-sm-10 col-md-10 col-lg-3">
             <h2>Quality products</h2>

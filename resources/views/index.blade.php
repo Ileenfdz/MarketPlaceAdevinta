@@ -16,5 +16,7 @@
         @endforeach
     </div>
 
+    <x-info-card/>
+
 </body>
 </html>
