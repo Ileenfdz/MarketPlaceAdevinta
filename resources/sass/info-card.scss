@@ -1,0 +1,21 @@
+
+.cardBgInfo {
+    background-color: $green;
+    color: $white;
+    border-radius: .5rem;
+
+    .decIcon{
+        background-color: $white50;
+        border-radius: 2rem 0 .5rem 0;
+        width: 5rem;
+        height: 5rem;
+
+        .iconInfo{
+            font-size: 2rem;
+            width: max-content;
+            height: 100%;
+        }
+    }
+    
+    
+    }
