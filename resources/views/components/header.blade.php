@@ -1,10 +1,44 @@
-<div>
-    <header class="d-flex justify-content-center align-items-center py-3">
-        <a href="{{ route('index')}}" class="d-flex align-items-center me-auto  ms-5 text-decoration-none">
-            <span id="title">Market place</span>
-        </a>
+<div id="app">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a href="{{ route('index')}}" class="d-flex align-items-center me-auto text-decoration-none">
+                <span id="title">Market place</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        {{$slot}}
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    @guest
+                        @if (Route::has('login'))
+                            <ul class="nav nav-pills">
+                                <li id="link" class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                                <li id="link" class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+                            </ul>
+                        @endif
+                    @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
+                            </a>
 
-    </header>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @endguest
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{$slot}}
 </div>

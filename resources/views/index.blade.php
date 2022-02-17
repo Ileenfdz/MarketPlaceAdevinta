@@ -9,7 +9,5 @@
 </head>
 <body>
     <x-header></x-header>
-    
-    <x-footer/>
 </body>
 </html>
