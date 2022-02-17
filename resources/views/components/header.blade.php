@@ -22,9 +22,9 @@
 
                     @auth
                         @if (Route::is('index'))
-                        <ul class="nav nav-pills">
-                            <li id="link" class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-                        </ul>
+                            <ul class="nav nav-pills">
+                                <li id="link" class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
+                            </ul>
                         @endif
                         @if (Route::is('home'))
                             <li class="nav-item dropdown">

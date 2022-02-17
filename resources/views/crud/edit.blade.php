@@ -9,8 +9,9 @@
 </head>
 <body>
     <x-header/>
-    @foreach ($ads as $ad)
-        <x-card :ad="$ad"/>  
-    @endforeach
+    
+    <x-edit :ad="$ad"/>
+
+    <x-footer/>
 </body>
 </html>

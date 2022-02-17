@@ -14,11 +14,12 @@ class AdFactory extends Factory
     public function definition()
     {
         return [
-            'ad_name' => $this->faker->name(),
-            'ad_image' => $this->faker->imageUrl(200,200),
-            'ad_description' => $this->faker->text(255),
             'ad_seller' => $this->faker->name(),
+            'ad_name' => $this->faker->name(),
             'ad_price' => $this->faker->numberBetween(10,40),
+            'ad_description' => $this->faker->text(255),
+            'ad_image' => $this->faker->imageUrl(200,200),
+            
         ];
     }
 }

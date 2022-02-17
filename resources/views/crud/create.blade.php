@@ -9,8 +9,11 @@
 </head>
 <body>
     <x-header/>
-    @foreach ($ads as $ad)
-        <x-card :ad="$ad"/>  
-    @endforeach
+    <form action="/user" method="POST" class="d-flex justify-content-center">
+        <x-create>
+            @csrf
+        </x-create>
+    </form>
+    <x-footer/>
 </body>
 </html>

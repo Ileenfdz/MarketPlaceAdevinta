@@ -15,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
-
-// Route::resource()
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/user', 'App\Http\Controllers\AdController')->names([
+    'index' => 'user',
+    'create' => 'user.create',
+    'edit' => 'user.edit'
+]);

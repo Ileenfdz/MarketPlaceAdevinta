@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('ads', function (Blueprint $table) {
             $table->id();
-            $table->string('ad_name');
-            $table->string('ad_image');
-            $table->string('ad_description');
             $table->string('ad_seller');
+            $table->string('ad_name');
             $table->integer('ad_price');
+            $table->string('ad_description');
+            $table->string('ad_image');
             $table->timestamps();
         });
     }

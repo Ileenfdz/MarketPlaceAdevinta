@@ -11,11 +11,11 @@ class Ad extends Model
     use HasFactory;
 
     protected $fillable = [
-        'ad_name',
-        'ad_image',
-        'ad_description',
         'ad_seller',
+        'ad_name',
         'ad_price',
+        'ad_description',
+        'ad_image',
     ];
 
     public function users(){
