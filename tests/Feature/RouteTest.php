@@ -17,7 +17,6 @@ class RouteTest extends TestCase
      */
     public function test_index()
     {
-        $ads = Ad::all();
         $response = $this->get('/');
 
         $response->assertSuccessful()
