@@ -12,6 +12,6 @@
     
     <x-edit :ad="$ad"/>
 
-    {{-- <x-footer/> --}}
+    <x-footer/>
 </body>
 </html>

@@ -11365,6 +11365,7 @@ textarea.form-control-lg {
   transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 .access {
   font-size: 48px;
   color: #0A123E;
@@ -11427,6 +11428,25 @@ textarea.form-control-lg {
 }
 .crud-form button a {
   color: #FFFFFF;
+=======
+.cardBgInfo {
+  background-color: #00BE65;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+}
+.cardBgInfo .decIcon {
+  background-color: #ffffff85;
+  border-radius: 2rem 0 0.5rem 0;
+  width: 5rem;
+  height: 5rem;
+}
+.cardBgInfo .decIcon .iconInfo {
+  font-size: 2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+>>>>>>> 19b9c772db353d83dda38c275180a928eb12b2f6
 }
 
 * {

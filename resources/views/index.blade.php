@@ -14,6 +14,7 @@
             <x-card :ad="$ad"/>  
         @endforeach
     </div>
-    {{-- <x-footer/> --}}
+    <x-info-card/>
+    <x-footer/>
 </body>
 </html>

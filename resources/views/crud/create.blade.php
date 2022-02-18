@@ -14,6 +14,6 @@
             @csrf
         </x-create>
     </form>
-    {{-- <x-footer/> --}}
+    <x-footer/>
 </body>
 </html>
