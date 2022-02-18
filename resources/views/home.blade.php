@@ -3,23 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="d-flex justify-content-center mb-5">
-            <button class="btnEvento" type="button"><a id="link_admin" href="{{ route('user.create')}}">Crear nuevo evento</a></button>
-        </div>
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+        <div class="div-btn-create d-flex justify-content-center mb-5">
+            <button class="btnEvento border-0 btn-create p-4" type="button"><a id="link_create" href="{{ route('user.create')}}" class="text-decoration-none">Crear nuevo evento</a></button>
         </div>
     </div>
     <div class="container d-flex flex-wrap justify-content-center gap-4 py-4">

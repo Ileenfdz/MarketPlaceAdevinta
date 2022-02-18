@@ -45,5 +45,6 @@
 
 }
 .cardAnim:hover {
+    transition-duration: 500ms;
     transform: scale(1.1);   
 }

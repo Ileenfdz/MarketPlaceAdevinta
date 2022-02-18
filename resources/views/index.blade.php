@@ -9,12 +9,11 @@
 </head>
 <body>
     <x-header/>
-
     <div class="container d-flex flex-wrap justify-content-center gap-4 py-4">
         @foreach ($ads as $ad)
             <x-card :ad="$ad"/>  
         @endforeach
     </div>
-
+    {{-- <x-footer/> --}}
 </body>
 </html>

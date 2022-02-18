@@ -14,11 +14,16 @@ class AdTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_get_all_Ads()
     {
-        $response = $this->get('/');
+        $ad = Ad::factory(5)->create();
 
-        $response->assertStatus(200);
+        $response = $this->get(route('index'), $ad->toArray());
+
+        $response->assertStatus(200)
+            ->assertViewIs('index')
+            ->assertSeeText('Market place')
+            ->assertSee($ad[0]->ad_name)
+            ->assertViewHasAll(['ads']);
     }
-
 }

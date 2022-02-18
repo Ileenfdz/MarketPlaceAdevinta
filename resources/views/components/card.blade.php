@@ -1,15 +1,3 @@
-<!-- <div class="card" style="width: 18rem;">
-  <img src="{{$ad->ad_image}}" class="card-img-top" alt="...">
-  
-  <div class="card-body">
-    <h5 class="card-title">{{$ad->ad_name}}</h5>
-    <p class="card-owner">{{$ad->ad_seller}}</p>
-    <p class="card-price">{{$ad->ad_price}}$</p>
-    <p class="card-text">{{$ad->ad_description}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> -->
-
 <div class="card cardAnim" style="width: 18rem;">
   <img src='{{$ad->ad_image}}' class="card-img-top cardimg" alt="...">
   <div class="card-body">

@@ -1,0 +1,11 @@
+.btn-create {
+    background-color: $orange;
+    border-radius: 25px;
+    a {
+        color: $white;
+    }
+}
+
+.btn-create:hover {
+    background-color: orangered;
+}

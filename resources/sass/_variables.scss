@@ -12,3 +12,14 @@ $orange: #FA6F21;
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+@mixin header($font-size: 18px, $color: $orange) {
+    font-size: $font-size;
+    color: $color;
+    font-weight: bold;
+}
+
+d-center {
+    display: flex;
+    justify-content: center;
+}

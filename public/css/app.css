@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
 @charset "UTF-8";
+d-center, .crud-form .crud-title, .access-form .div-forgot, .access-form .div-access, .access-form .div-remember, .access-form .div-input {
+  display: flex;
+  justify-content: center;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11287,16 +11292,33 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.card-header {
-  background-color: #FFFFFF;
+#title {
+  font-size: 24px;
+  color: #00BE65;
+  font-weight: bold;
 }
-.card-header header #title {
+#title #shop {
+  color: #0A123E;
+}
+
+#link .nav-link {
   font-size: 18px;
-  color: black;
+  color: #FA6F21;
+  font-weight: bold;
 }
-.card-header header #link {
-  font-size: 14px;
-  color: gray;
+
+.nav-item #navbarDropdown {
+  font-size: 18px;
+  color: #FA6F21;
+  font-weight: bold;
+}
+.nav-item .dropdown-menu {
+  background-color: #0A123E;
+}
+.nav-item .dropdown-menu .dropdown-item {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .card-body .card-title {
@@ -11339,7 +11361,72 @@ textarea.form-control-lg {
 }
 
 .cardAnim:hover {
+  transition-duration: 500ms;
   transform: scale(1.1);
+}
+
+.access {
+  font-size: 48px;
+  color: #0A123E;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.access-form .div-input input {
+  font-weight: bold;
+  width: 300px;
+  border: 2px #0A123E solid;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.access-form .div-remember {
+  font-weight: bold;
+}
+.access-form .div-remember input {
+  border: 2px #0A123E solid;
+  border-radius: 50px;
+}
+.access-form .div-access .btn-login, .access-form .div-access .btn-register {
+  color: #FFFFFF;
+  background-color: #FA6F21;
+  border-radius: 25px;
+}
+.access-form .div-forgot a {
+  font-weight: bold;
+}
+
+.btn-create {
+  background-color: #FA6F21;
+  border-radius: 25px;
+}
+.btn-create a {
+  color: #FFFFFF;
+}
+
+.btn-create:hover {
+  background-color: orangered;
+}
+
+.crud-form .crud-title {
+  font-size: 32px;
+  color: #0A123E;
+  font-weight: bold;
+}
+.crud-form input {
+  padding: 10px 40px;
+  border: 2px #0A123E solid;
+  border-radius: 25px;
+}
+.crud-form button {
+  width: 100px;
+  height: 30px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  background-color: #FA6F21;
+  font-weight: bold;
+}
+.crud-form button a {
+  color: #FFFFFF;
 }
 
 * {

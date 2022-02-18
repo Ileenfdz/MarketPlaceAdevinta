@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a href="{{ route('index')}}" class="d-flex align-items-center me-auto text-decoration-none">
-                <span id="title">Market place</span>
+                <span id="title" class="ms-1">FruVer<span id="shop" class="ms-1">Shop</span></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>

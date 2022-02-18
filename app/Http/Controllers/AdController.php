@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ad;
 use App\Models\Ads;
+use Exception;
 use Illuminate\Http\Request;
 
 class AdController extends Controller
@@ -34,7 +35,13 @@ class AdController extends Controller
      */
     public function create()
     {
-        return view('crud.create');
+        try {
+            return view('crud.create');
+        }
+        catch(Exception $e) {
+            return $e->getMessage();
+        }
+        
     }
 
     /**
@@ -45,17 +52,22 @@ class AdController extends Controller
      */
     public function store(Request $request)
     {
-        $ads = new Ad();
+        try {
+            $ads = new Ad();
 
-        $ads->ad_seller = $request->get('ad_seller');
-        $ads->ad_name = $request->get('ad_name');
-        $ads->ad_price = $request->get('ad_price');
-        $ads->ad_description = $request->get('ad_description');
-        $ads->ad_image = $request->get('ad_image');
+            $ads->ad_seller = $request->get('ad_seller');
+            $ads->ad_name = $request->get('ad_name');
+            $ads->ad_price = $request->get('ad_price');
+            $ads->ad_description = $request->get('ad_description');
+            $ads->ad_image = $request->get('ad_image');
 
-        $ads->save();
+            $ads->save();
 
-        return redirect('home');
+            return redirect('home');
+        }
+        catch(Exception $e) {
+            return $e->getMessage();
+        }
     }
 
     /**
@@ -77,8 +89,14 @@ class AdController extends Controller
      */
     public function edit($id)
     {
-        $ad = Ad::findOrFail($id);
-        return view('crud.edit')->with('ad', $ad);
+        try {
+            $ad = Ad::findOrFail($id);
+            return view('crud.edit')->with('ad', $ad);
+        }
+        catch(Exception $e) {
+            return $e->getMessage();
+        }
+        
     }
 
     /**
@@ -90,17 +108,23 @@ class AdController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $ad = Ad::findOrFail($id);
+        try {
+            $ad = Ad::findOrFail($id);
 
-        $ad->ad_seller = $request->get('ad_seller');
-        $ad->ad_name = $request->get('ad_name');
-        $ad->ad_price = $request->get('ad_price');
-        $ad->ad_description = $request->get('ad_description');
-        $ad->ad_image = $request->get('ad_image');
+            $ad->ad_seller = $request->get('ad_seller');
+            $ad->ad_name = $request->get('ad_name');
+            $ad->ad_price = $request->get('ad_price');
+            $ad->ad_description = $request->get('ad_description');
+            $ad->ad_image = $request->get('ad_image');
 
-        $ad->save();
+            $ad->save();
 
-        return redirect('home');
+            return redirect('home');
+        }
+        catch(Exception $e) {
+            return $e->getMessage();
+        }
+        
     }
 
     /**
@@ -111,8 +135,14 @@ class AdController extends Controller
      */
     public function destroy($id)
     {
-        $ad = Ad::findOrFail($id);
-        $ad->delete();
-        return redirect('home');
+        try {
+            $ad = Ad::findOrFail($id);
+            $ad->delete();
+            return redirect('home');
+        }
+        catch(Exception $e) {
+            return $e->getMessage();
+        }
+        
     }
 }

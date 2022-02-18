@@ -1,0 +1,41 @@
+.access {
+    @include header($color: $blue, $font-size: 48px);
+    margin-bottom: 20px;
+}
+.access-form {
+    .div-input{
+        @extend d-center;
+        input {
+            font-weight: bold;
+            width: 300px;
+            border: 2px $blue solid;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .div-remember {
+        @extend d-center;
+        font-weight: bold;
+        input {
+            border: 2px $blue solid;
+            border-radius: 50px;
+        }
+    }
+    .div-access  {
+        @extend d-center;
+        .btn-login, .btn-register {
+            color: $white;
+            background-color: $orange;
+            border-radius: 25px;
+        }
+    }
+    
+
+    .div-forgot {
+        @extend d-center;
+        a {
+            font-weight: bold;
+        }
+    }
+}

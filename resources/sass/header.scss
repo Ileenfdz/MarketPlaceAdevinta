@@ -1,14 +1,25 @@
-.card-header {
-    background-color: $white;
-    header {
-        #title {
-            font-size: 18px;
-            color: black;
-        }
+#title { 
+    @include header($font-size: 24px, $color: $green);
 
-        #link {
-            font-size: 14px;
-            color: gray;
+    #shop {
+        color: $blue;
+    }
+}
+#link { 
+    .nav-link {
+        @include header;
+    }
+}
+
+.nav-item {
+    #navbarDropdown {
+        @include header;
+    }
+
+    .dropdown-menu {
+        background-color: $blue;
+        .dropdown-item {
+            @include header($color: $white);
         }
     }
 }

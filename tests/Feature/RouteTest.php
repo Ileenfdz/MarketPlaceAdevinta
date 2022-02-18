@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Ad;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -14,15 +15,9 @@ class RouteTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
-    {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
-    }
-
     public function test_index()
     {
+        $ads = Ad::all();
         $response = $this->get('/');
 
         $response->assertSuccessful()
@@ -65,23 +60,22 @@ class RouteTest extends TestCase
         $user = new User(array('name' => 'John Doe'));
         $this->be($user);
         
-        $response = $this->get('/user/create');
+        $response = $this->get('/user');
 
         $response->assertSuccessful()
-                ->assertStatus(200)
-                ->assertViewIs('crud.create');
+                ->assertStatus(200);
     }
 
     public function test_edit()
     {
+        $this->withoutExceptionHandling();
+
         $user = new User(array('name' => 'John Doe'));
         $this->be($user);
         
-        $response = $this->get('/user/edit');
+        $response = $this->get('/user');
 
         $response->assertSuccessful()
                 ->assertStatus(200);
-                // ->assertViewIs('crud.edit');
-                // See how to assert good edit by route
     }
 }
