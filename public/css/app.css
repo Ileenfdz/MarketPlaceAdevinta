@@ -11365,7 +11365,6 @@ textarea.form-control-lg {
   transform: scale(1.1);
 }
 
-<<<<<<< HEAD
 .access {
   font-size: 48px;
   color: #0A123E;
@@ -11428,7 +11427,8 @@ textarea.form-control-lg {
 }
 .crud-form button a {
   color: #FFFFFF;
-=======
+}
+
 .cardBgInfo {
   background-color: #00BE65;
   color: #FFFFFF;
@@ -11446,7 +11446,6 @@ textarea.form-control-lg {
   width: -moz-max-content;
   width: max-content;
   height: 100%;
->>>>>>> 19b9c772db353d83dda38c275180a928eb12b2f6
 }
 
 * {
